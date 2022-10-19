@@ -31,8 +31,8 @@ job('Alex example') {
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
-        shell("npm install")
-    }
+        shell("docker build -t test:test .")
+            }
 }
 
 
